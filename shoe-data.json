@@ -1,0 +1,139 @@
+﻿{
+    "NikeAirMax": [
+        {
+            "id": "1",
+            "name": "Air Max 1",
+            "year": "1987",
+            "about": "Designed by Tinker Hatfield, the Nike Air Max 1 was the first sneaker to offer a window to the sole. The out-of-the-box thinker was inspired by the Centre Georges Pompidou in Paris to design the sneaker that made its Air technology visible.",
+            "colorway": "University Red and White",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#D9F3FF"
+        },
+        {
+            "id": "2",
+            "name": "Air Max Light",
+            "year": "1989",
+            "about": "Cutting Season. Like the Air Max 1 but (unsurprisingly) less weighty, Nike tweaked its successful silhouette with EVA foam for a brand-new feel.",
+            "colorway": "Red/White/Navy",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#EFEFEF"
+        },
+        {
+            "id": "3",
+            "name": "Air Max 90",
+            "year": "1990",
+            "about": "Originally dubbed the Air Max 3, The Nike Air Max 90 completely reworked the Air Max sneaker for the new decade. Still today, the Air Max 90 is one of the most popular sneakers in the world. Don’t even get us started on that Off-White collab",
+            "colorway": "Infrared",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#F6FFD8"
+        },
+        {
+            "id": "4",
+            "name": "Air Classic BW",
+            "year": "1991",
+            "about": "The Nike Air Classic BW was originally a sleeker version of the Air Max 90 with a bigger Air window (yes, the BW really does stand for ‘Big Window’). Most recently, the Nike Air Max BW has been updated with a full-length Air sole borrowed from the Air Max 97. First seen on a SKAir model by Skepta; we think the changes majorly upgrade the sneaker.",
+            "colorway": "Persian Violet",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#FFD5D6"
+        },
+        {
+            "id": "5",
+            "name": "Air Max 180",
+            "year": "1992",
+            "about": "Time to get playful. The first Nike sneaker to display Air technology on its outsole, the Nike Air Max 180 (180-degree views of visible air) was in many ways a departure from the tried-and-tested formula of the early Air Maxs.",
+            "colorway": "Ultramarine",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#EFEFEF"
+        },
+        {
+            "id": "6",
+            "name": "Air Max 93",
+            "year": "1993",
+            "about": "Created using a blow-moulding technique, the Air Max 93 (the original Air Max 270) took the design of the Air Max 180 and gave us coloured Air units (yess), a sock-like fit (yessss) and more air for our money (yassssss).",
+            "colorway": "Menthol",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#D9F3FF"
+        },
+        {
+            "id": "7",
+            "name": "Air Max 2 Light",
+            "year": "1994",
+            "about": "Entering more unfamiliar territory on our journey through Air Max history, the 1994 Air Max (predictably labelled the Air Max 94) is frequently overlooked or unknown by even the most avid sneaker collectors. So, what is it? It’s essentially a hybrid of the Nike Air Max Light and The Nike Air Max 93.",
+            "colorway": "Court Purple",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#EFEFEF"
+        },
+        {
+            "id": "8",
+            "name": "Air Max 95",
+            "year": "1995",
+            "about": "A sneaker of subtle branding and striking form: the Sergio Lozano designed Air Max 95 was created with the human anatomy in mind. It’s important to note that the Air Max 95 marks an important milestone in the Nike Air Max timeline as the complete overhaul in design signifies the brand’s confidence in its relationship with their consumer.",
+            "colorway": "Neon",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#D9F3FF"
+        },
+        {
+            "id": "9",
+            "name": "Air Max 96",
+            "year": "1996",
+            "about": "An original ‘chunky sneaker’; the Nike Air Max 96 has a lot in common with today’s most sought-after silhouettes. In fact, with its minimal branding, layered upper and bulky sole being so en-vogue, we’re anticipating a re-release in the near future",
+            "colorway": "White/Obsidian/Scream Green",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#F6FFD8"
+        },
+        {
+            "id": "10",
+            "name": "Air Max 97",
+            "year": "1997",
+            "about": "Finally, full-length Air cushioning. The Air Max 97 — designed by Christian Tressler and inspired by waterdrops making ripples in a pond — is the darling of the sneakerhead community. And while the OG colourway is often dubbed the ‘Silver Bullet’, the hue was in fact inspired by the silver sheen of mountain bikes.",
+            "colorway": "Silver",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#EFEFEF"
+        },
+        {
+            "id": "11",
+            "name": "Air Max 98",
+            "year": "1998",
+            "about": "If any Air Max encapsulates 90s fashion, it’s the Air Max 98. Mismatched design and bold, contrasting colours make the 1998 kicks one of the most eye-catching Nike releases ever.",
+            "colorway": "Gundam",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#F6FFD8"
+        },
+        {
+            "id": "12",
+            "name": "Air Max 2003",
+            "year": "2003",
+            "about": "Florida: the location where Sean McDowell first envisioned a sneaker that drew inspiration from the beach. Palm trees swaying, colours of the sunset and sealife are all translated through design upon the Air Max Plus (better known as the Nike TN).",
+            "colorway": "Hyperblue",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#D9F3FF"
+        },
+        {
+            "id": "13",
+            "name": "Air Max 360",
+            "year": "2006",
+            "about": "A performance-focused silhouette, the Nike Air Max 360 is built upon an Air unit that is visible from every angle (something you probably guessed from its name). It reflects a time in which a sneaker’s ability to be used in sports was regarded as highly important.",
+            "colorway": "Red/White",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#F6FFD8"
+        },
+        {
+            "id": "14",
+            "name": "Air Max 270",
+            "year": "2018",
+            "about": "In 2018, Nike looked back to their early 90s designs to inspire forward-thinking ideas — ideas to follow ever-growing interests in lifestyle sneakers. The result: a retrofuturistic sneaker that sparked interest with the brand-new Gen Z consumers.",
+            "colorway": "Black and Hot Punch/Blue/Orange",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#D9F3FF"
+        },
+        {
+            "id": "15",
+            "name": "Air Max 720",
+            "year": "2019",
+            "about": "The sequel to the 270, the Air Max 720’s space-age look and bulky Air unit (the tallest airbag of the Air Max timeline) come together to create one of the most exciting sneakers of the 21st Century.",
+            "colorway": "Aurora Borealis",
+            "colors": [ "#EDEDED" , "#FF4743", "#202020" ],
+            "backgroundColor": "#EFEFEF"
+        }
+    ]
+}
