@@ -24,13 +24,18 @@ window.addEventListener("resize", () => {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
 });
 
-
+let previous = 0;
+let actualItem = 0;
 
 /********  Init *********/
 
 function init() {
-    let previous = 1;
-    let actualItem = 1;
+    let yOffset = (window.innerHeight * 0) + (window.innerHeight / 2);
+    document.querySelector(".scroll-container-wrapper").scrollTo(0, yOffset);
+    let div1 = document.querySelector(".scroll-container-wrapper");
+    window.scrollTo(0, div1.scrollTop);
+    
+
     let timelineItem = document.querySelectorAll(".timeline__item");
 
     document.querySelector(".loading-screen").classList.add("loading-display-none");
@@ -40,6 +45,7 @@ function init() {
     createScrollDivs();
     timelineEventListeners();
     setTimelineDistances();
+    updateTimeline(0);
 
     function setTimelineDistances() {
         for (i = 1; i < timelineItem.length - 1; i++) {
@@ -79,21 +85,12 @@ function init() {
         let shoeFrameArr = [];
         shoeFrameArr = createShoeFrameArray();
         initialShoe(shoeData);
-        let oldi = 1;
+        let oldi = 0;
 
         document.querySelector(".scroll-container-wrapper").addEventListener("scroll", function () {
             let scrollPosition = getScrollPosition();
             displayDataOnFrame(shoeFrameArr, scrollPosition, shoeData);
-            /*   synchScroll(scrollPosition); */
-
         });
-
-        function synchScroll(scrollPosition) {
-            let menuScrollPosition;
-            menuScrollPosition = Math.floor(scrollPosition / 10);
-            document.querySelector('.timeline__scroll').scrollTop = menuScrollPosition;
-
-        }
 
         function initialShoe(shoeData) {
             document.querySelector(".main").style.backgroundColor = shoeData.NikeAirMax[0].backgroundColor;
@@ -117,14 +114,15 @@ function init() {
                     oldi = i;
                     console.log(oldi);
                     updateTimeline(oldi);
-                    document.querySelector(".shoe-name").style.transition = "0s";
-                    document.querySelector(".shoe-name").style.opacity = "0";
-                    setTimeout(function () {
+                    document.querySelectorAll(".animate").forEach(e => {
+                        e.style.transition = "0s";
+                        e.style.opacity = "0";
+                        setTimeout(function () {
+                            e.style.transition = "0.4s";
+                            e.style.opacity = "1";
 
-                        document.querySelector(".shoe-name").style.transition = "0.4s";
-                        document.querySelector(".shoe-name").style.opacity = "1";
-
-                    }, 200)
+                        }, 200)
+                    });
 
                     document.querySelector(".shoe-name").textContent = shoeData.NikeAirMax[i].name;
                     document.querySelector(".shoe-year").innerHTML = shoeData.NikeAirMax[i].year;
@@ -171,30 +169,6 @@ function init() {
 
         } */
 
-        function updateTimeline(i) {
-            console.log("done");
-
-            /*             let itemScrollPosition,itemHeight,timelineHeight;
-                        timelineHeight = document.getElementById('timeline__items').offsetHeight;
-                        timelineHeight = timelineHeight-200;
-                        console.log(timelineHeight);
-                        itemHeight = Math.floor(timelineHeight / 14);
-                        itemScrollPosition = i*itemHeight;
-                        console.log(itemScrollPosition);
-                        document.querySelector('.timeline__scroll').scrollTop = itemScrollPosition; */
-            setTimeout(function () {
-                document.getElementById("t_" + i).scrollIntoView({
-                    behavior: "smooth",
-                    block: "center",
-                    inline: "center"
-                });
-            }, 750)
-            document.getElementById("t_" + previous).classList.remove('active');
-            document.getElementById("t_" + i).classList.add('active');
-            previous = i;
-            actualItem = i;
-        }
-
         function createShoeFrameArray() {
             let oneShoeHight = window.innerHeight;
             let j = 1;
@@ -236,15 +210,47 @@ function init() {
         }
     }
 
+    function updateTimeline(i) {
+        /*             let itemScrollPosition,itemHeight,timelineHeight;
+                    timelineHeight = document.getElementById('timeline__items').offsetHeight;
+                    timelineHeight = timelineHeight-200;
+                    console.log(timelineHeight);
+                    itemHeight = Math.floor(timelineHeight / 14);
+                    itemScrollPosition = i*itemHeight;
+                    console.log(itemScrollPosition);
+                    document.querySelector('.timeline__scroll').scrollTop = itemScrollPosition; */
+        setTimeout(function () {
+            document.getElementById("t_" + i).scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+                inline: "center"
+            });
+        }, 750)
+        document.getElementById("t_" + previous).classList.remove('active');
+        document.getElementById("t_" + i).classList.add('active');
+        previous = i;
+        actualItem = i;
+    }
+
     function timelineEventListeners() {
         document.querySelector(".arrow__up").addEventListener("click", moveTimelineUp);
         document.querySelector(".arrow__down").addEventListener("click", moveTimelineDown);
         let buttonsYears = document.querySelectorAll(".timeline__item__mask");
         buttonsYears.forEach(button => {
             button.addEventListener("click", e => {
+                
+                
+                let x = window.matchMedia("(max-width: 900px)")
+                if (x.matches) {
+                    setTimeout(function () {
+                   toggleMenu();
+                }, 300)
+                }
+
                 let shoeNr = e.target.getAttribute("data-screen");
                 let yOffset = (window.innerHeight * shoeNr) + (window.innerHeight / 2);
                 document.querySelector(".scroll-container-wrapper").scrollTo(0, yOffset);
+                console.log(yOffset);
             });
         })
     }
@@ -270,8 +276,6 @@ function init() {
             actualItem = actualItem + 2;
         }
     }
-
-
 
 }
 
