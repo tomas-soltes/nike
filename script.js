@@ -188,7 +188,7 @@ function init() {
                     block: "center",
                     inline: "center"
                 });
-            }, 700)
+            }, 900)
             document.getElementById("t_" + previous).classList.remove('active');
             document.getElementById("t_" + i).classList.add('active');
             previous = i;
