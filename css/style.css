@@ -185,6 +185,69 @@ button {
 
 }
 
+/* Intro-screen */
+.intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1c1c1c;
+  z-index: 110;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.intro-screen-text_box{
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.intro-screen-text_box h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.intro-screen-text_box h2{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.intro-screen-text_box p{
+  margin: 15% auto 3%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.intro-screen-text_box button{
+  margin: 5% auto;
+  border-radius: 5px;
+  padding: 2% 4%;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #FF4743;
+  color: white;
+  border: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+.intro-screen-text_box button:hover{
+  background-color: white;
+  color: #FF4743;
+  transform: scale(1.1);
+}
+}
+
 /* Loading-screen */
 .loading-screen {
   position: fixed;
@@ -193,7 +256,8 @@ button {
   width: 100vw;
   height: 100vh;
   background-color: #1c1c1c;
-  z-index: 999;
+  z-index: 100;
+  transition: 0.3s ease-in-out;
 }
 
 .loading-display-none {
@@ -218,10 +282,10 @@ button {
   width: 51px;
   height: 51px;
   margin: 6px;
-  border: 6px solid #FF6600;
+  border: 6px solid #FF4743;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #FF6600 transparent transparent transparent;
+  border-color: #FF4743 transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
@@ -253,8 +317,8 @@ img {
 
 /* * {
   border: 1px solid green;
-} */
-
+}
+ */
 
 .container {
   width: 100%;
@@ -277,7 +341,7 @@ img {
   margin: 0;
   transition: all 0.4s ease-in-out;
   transform: translateX(-70%);
-  z-index: 100;
+  z-index: 50;
 }
 
 .timeline__box {
@@ -362,7 +426,7 @@ img {
 .timeline__item--first {
   margin-bottom: 0;
   margin-top: -10%;
-  padding-top: 50%;
+  padding-top: 47.5%;
 }
 
 .timeline__item--last {
@@ -489,6 +553,44 @@ span:after {
 }
 
 @media (max-width: 900px) {
+
+  /* Intro-screen */
+
+.intro-screen-text_box{
+  width: 75%;
+}
+
+.intro-screen-text_box h1{
+  font-size: 40px;
+  margin-bottom: 15%;
+}
+
+.intro-screen-text_box h2{
+  width: 95%;
+  font-size: 16px;
+}
+
+.intro-screen-text_box p{
+  width: 80%;
+  margin: 30% auto 5%;
+  font-size: 15px;
+}
+
+.intro-screen-text_box button{
+  margin: 20% auto;
+  border-radius: 5px;
+  padding: 5% 12%;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #FF4743;
+  color: white;
+  border: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+
   .main {
     grid-template-rows: 10% 55% 35%;
   }

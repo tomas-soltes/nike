@@ -1,5 +1,13 @@
-let randomNumber = Math.floor(Math.random() * (2200 - 1500 + 1)) + 1500;
-setTimeout(init, randomNumber)
+let enterBtn = document.querySelector(".enter");
+enterBtn.addEventListener("click",loadScreen);
+let randomNumber = Math.floor(Math.random() * (2200 - 1500 + 1)) + 1000;
+
+function loadScreen(){
+    document.querySelector(".intro-screen").style.opacity = "0";
+    document.querySelector(".intro-screen").style.visibility = "hidden";
+    setTimeout(init, randomNumber)
+}
+
 
 /********  Hide menu on mobile version  *********/
 if (window.matchMedia("(max-width: 700px)").matches) {
@@ -101,7 +109,7 @@ function init() {
             let circles = document.querySelectorAll(".colorway-cirlce");
             document.querySelector(".shoe-name").style.color = "black";
             for (j = 0; j < 3; j++) {
-                circles[j].style.backgroundColor = shoeData.NikeAirMax[0].colors[j + 1];
+                circles[j].style.backgroundColor = shoeData.NikeAirMax[0].colors[j];
             }
         }
 
@@ -132,7 +140,7 @@ function init() {
                     let circles = document.querySelectorAll(".colorway-cirlce");
                     document.querySelector(".shoe-name").style.color = "black";
                     for (j = 0; j < 3; j++) {
-                        circles[j].style.backgroundColor = shoeData.NikeAirMax[i].colors[j + 1];
+                        circles[j].style.backgroundColor = shoeData.NikeAirMax[i].colors[j];
                     }
                     return;
                 }
